@@ -21,3 +21,9 @@
 - sensor 传感器包，包含一个封装维特智能芯片的抽象类、接口等，目前只实现了一个WT901BLE04传感器的封装。在获取到设备实例后，可以直接用MAC或者实例 实例化一个传感器实例
 
 - utils 工具包，，不过貌似没什么用
+
+
+## 引用
+
+[![](https://jitpack.io/v/binzeefox/WIT901BLE_Helper.svg)](https://jitpack.io/#binzeefox/WIT901BLE_Helper)\
+``` implementation 'com.github.binzeefox:WIT901BLE_Helper:Tag' ```
