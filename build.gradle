@@ -1,4 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin:'maven'
+group='com.github.binzeefox'
 
 buildscript {
     repositories {
@@ -8,7 +11,8 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.2'
-        
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'  //注意版本号保持为最新版本
+
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -17,11 +21,13 @@ buildscript {
 allprojects {
     repositories {
         google()
-        jcenter()
-        
+//        jcenter()
+        maven { url "http://jcenter.bintray.com"}
+        mavenCentral()
+        maven { url "https://jitpack.io" }
     }
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}
+//task clean(type: Delete) {
+//    delete rootProject.buildDir
+//}
