@@ -1,5 +1,6 @@
 # WIT901BLE_Helper
 扫描和链接WIT901BLE 传感器的安卓工具库
+作者非维特智能员工，项目应用到的东西也通过公开途径获得，且非盈利用途。
 
 ## 权限
 ``` <uses-permission android:name="android.permission.BLUETOOTH" /> ```\
@@ -12,7 +13,7 @@
 
 - 扫描需要开启定位，否则无法扫描Ble设备
 
-- 由于不是jar包，也不是依赖，复制进工程后请手动更改包名
+- 已经打包Jitpack依赖，详见下面引用
 
 ## 包
 
