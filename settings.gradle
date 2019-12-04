@@ -1,0 +1,2 @@
+include ':app', ':wit901ble'
+rootProject.name='WIT901BLE_Helper'
